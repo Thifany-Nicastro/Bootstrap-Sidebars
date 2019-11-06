@@ -1,11 +1,12 @@
 html, body {
     height: 100%;
+    background: #E2C06F;
 }
 
 main {
     display: flex;
     width: 100%;
-    background: darksalmon;
+    background: #E2C06F;
 }
 
 a, a:hover, a:focus {
@@ -19,7 +20,6 @@ a, a:hover, a:focus {
     background: #fff;
     border: none;
     border-radius: 0;
-    margin-bottom: 40px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -184,6 +184,7 @@ a[data-toggle="collapse"] {
 
 .footer {
     margin-left: 300px;
+    background: white;
 }
 
 .footer.active {
