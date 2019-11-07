@@ -1,0 +1,20 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+#sidebar {
+    background: blue;
+    /*z-index: 1000;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;*/
+    width: 250px;
+    height: 100vh;
+}
+
+#content {
+    background: yellow;
+}
