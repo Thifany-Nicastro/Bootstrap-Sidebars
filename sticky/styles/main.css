@@ -15,36 +15,50 @@ a:focus {
 ----------------------------------------------------- */
 
 #sidebar {
-    background: pink;
-    z-index: 999;
-    /*position: fixed;
+    background: #00bfff;
+    /*z-index: 999;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;*/
-    width: 250px;
+    width: 300px;
     height: 100vh;
     padding: 0;
     margin: 0;
 }
 
-#sidebar ul li a:hover {
-    background: #57a8ff;
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #00ace6;
+    color: white
+}
+
+#sidebar ul li a {
     color: white;
+}
+
+#sidebar ul li a:hover {
+    background: white;
+    color: #00bfff;
     /* border-color: white; */
 }
 
 #sidebar ul li a.active {
-    background: deepskyblue;
+    background: #00ace6;
     color: white;
 }
 
 #sidebar ul ul {
-    background: deepskyblue;
+    background: #00ace6;
     color: white;
 }
 
+#sidebar ul ul a{
+    padding-left: 30px;
+}
+
 #sidebar ul a[aria-expanded="true"] {
-    background: deepskyblue;
+    background: #00ace6;
 }
 
 /* ---------------------
@@ -68,5 +82,5 @@ a:focus {
 ----------------------------------------------------- */
 
 #content {
-    background: yellow;
+    background: #E2C06F;
 }
