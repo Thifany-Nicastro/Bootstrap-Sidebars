@@ -183,8 +183,26 @@ ul.extra-buttons a {
     right: 0;
 }*/
 
-#content {
+.caixa {
+    margin: 20px;
+    padding: 40px;
+}
 
+.transparente {
+    border: 1px solid white;
+    color: white;
+}
+
+.preenchida {
+    background: white;
+}
+
+.sombra {
+    box-shadow: 0px 15px 10px -15px var(--sidebar-color);
+}
+
+.borda {
+    border: 3px solid var(--sidebar-color);
 }
 
 
