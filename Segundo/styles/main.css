@@ -1,0 +1,90 @@
+/* ---------------------------------------------------
+    CORES E VARS
+----------------------------------------------------- */
+/*rgba(0,0,0,0.3); escurecer
+rgba(255,255,255,0.3); clarear
+
+#EEC6E7
+#8697A8
+#68716E
+#606562
+#2F2F31
+*/
+
+:root {
+    --color-1: #EEC6E7;
+    --sidebar-color: #8697A8;
+    --color-3: #68716E;
+    --color-4: #606562;
+    --body-color: #2F2F31;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background: var(--body-color);
+}
+
+/* ---------------------------------------------------
+    SIDEBAR
+----------------------------------------------------- */
+
+#sidebar {
+    background: var(--sidebar-color);
+    width: 300px;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar ul li a {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+
+#sidebar ul li a.active {
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+#sidebar ul li a:hover {
+    background: white;
+    color: var(--sidebar-color);
+}
+
+/* ---------------------
+    dropdown
+--------------------- */
+
+#sidebar ul a[aria-expanded="true"] {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#sidebar ul ul {
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+/* ---------------------
+    dropdown icon
+--------------------- */
+
+#sidebar ul a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 110px; /*20*/
+    transform: translateY(-50%);
+}
+
+/* ---------------------
+    ...
+--------------------- */
