@@ -1,0 +1,236 @@
+/* 
+rgba(0,0,0,0.3); escurecer
+rgba(255,255,255,0.3); clarear
+
+#4B4B4A
+#9DB8A4
+#EFDAA7
+#D1AA70
+#5C5340
+*/
+
+:root {
+    --sidebar-color: #4B4B4A;
+    --body-color: #D1AA70;
+    --idk-color: #9DB8A4;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background: var(--idk-color);
+}
+
+a, a:hover, a:focus {
+    transition: all 0.5s;
+}
+
+/* ---------------------------------------------------
+    SCROLLBAR
+----------------------------------------------------- */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--sidebar-color);
+}
+
+/* ---------------------------------------------------
+    SIDEBAR
+----------------------------------------------------- */
+
+#sidebar {
+    background: var(--sidebar-color);
+    width: 250px;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    /*transition: all 0.5s;*/
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    color: white
+}
+
+#sidebar ul li a {
+    color: white;
+}
+
+#sidebar ul li a:hover {
+    background: white;
+    color: var(--sidebar-color);
+    /* border-color: white; */
+}
+
+#sidebar ul li a.active {
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+#sidebar ul ul {
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+#sidebar ul ul a {
+    padding-left: 30px;
+}
+
+#sidebar ul a[aria-expanded="true"] {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* ---------------------
+    dropdown icon
+--------------------- */
+
+#sidebar ul a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+/* ---------------------
+    extra btn
+--------------------- */
+
+ul.extra-buttons {
+    padding: 20px;
+    margin-top: -10px;
+}
+
+ul.extra-buttons a {
+    text-align: center;
+    display: block;
+    padding: 10px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    border: 1px solid white;
+}
+
+/* ---------------------------------------------------
+    CONTENT
+----------------------------------------------------- */
+
+#navbar {
+    box-shadow: 0px 15px 10px -15px var(--sidebar-color);  
+    padding: 20px;
+}
+
+#navbar ul li {
+    border-bottom: 0px solid var(--sidebar-color);
+    transition: border-width 0.2s linear;
+    margin: 0px 10px;
+}
+
+#navbar ul li:hover {
+    border-bottom-width: 2px;
+}
+
+#navbar ul li:hover a {
+    color: var(--sidebar-color);
+    transition: color 0.2s linear;
+}
+
+#navbar ul li.active {
+    border-bottom: 2px solid var(--sidebar-color);
+}
+
+/*.hvrcenter {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.hvrcenter:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: var(--sidebar-color);
+    height: 2px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvrcenter:hover:before, .hvrcenter:focus:before, .hvrcenter:active:before {
+    left: 0;
+    right: 0;
+}*/
+
+.caixa {
+    margin: 20px;
+    padding: 40px;
+}
+
+.transparente {
+    border: 1px solid white;
+    color: white;
+}
+
+.preenchida {
+    background: white;
+}
+
+.sombra {
+    box-shadow: 0px 15px 10px -15px var(--sidebar-color);
+}
+
+.borda {
+    border: 3px solid var(--sidebar-color);
+}
+
+
+/* ---------------------------------------------------
+    ETC
+----------------------------------------------------- */
+
+/* animação simples borda */
+/*#navbar ul li a {
+    border-bottom: 2px solid var(--sidebar-color);
+    transition: border-width 0.6s linear;
+}
+
+#navbar ul li a:hover {
+    border-width: 10px;
+}*/
+
+/* outra animação da borda*/
+/*.hvrcenter::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+
+.hvrcenter:hover::after {
+    width: 100%;
+    transition: width .3s;
+}*/
