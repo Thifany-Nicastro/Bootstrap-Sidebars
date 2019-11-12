@@ -39,21 +39,29 @@ html, body {
 }
 
 #sidebar ul li a {
-    color: white;
+    color: rgba(0, 0, 0, 0.3);
     text-align: center;
     padding: 20px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    /*border-bottom: 1px solid rgba(0, 0, 0, 0.3);*/
 }
 
+/*#sidebar ul li a:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    padding-top: 20px;
+    border-bottom: 1px solid black;
+}*/
 
 #sidebar ul li a.active {
-    background: rgba(0, 0, 0, 0.3);
+    /*background: rgba(0, 0, 0, 0.3);*/
     color: white;
 }
 
 #sidebar ul li a:hover {
-    background: white;
-    color: var(--sidebar-color);
+    /*background: white;*/
+    color: white;
 }
 
 /* ---------------------
