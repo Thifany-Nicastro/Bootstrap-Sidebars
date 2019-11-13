@@ -1,0 +1,234 @@
+/* 
+rgba(0,0,0,0.3); escurecer
+rgba(255,255,255,0.3); clarear
+
+#272727
+#0B1322
+#3F68DE
+#4CA9E0
+#FAF8ED
+#DFAC31
+
+*/
+
+:root {
+    --sidebar-color: #272727;
+    --sidebar-color2: #3F68DE;
+    --body-color: #FAF8ED;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background: var(--body-color);
+}
+
+.notransition {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
+
+/* ---------------------------------------------------
+    SCROLLBAR
+----------------------------------------------------- */
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--sidebar-color);
+}
+
+/* ---------------------------------------------------
+    SIDEBAR
+----------------------------------------------------- */
+
+#sidebar {
+    background: var(--sidebar-color);
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar ul {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.item-bottom {
+    margin-top: auto;
+}
+
+#sidebar ul li a {
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+#sidebar ul li a:hover {
+    color: var(--sidebar-color2);
+}
+
+#sidebar ul li a.drop:hover:after {
+    content: "  ";
+    display: inline-block;
+    border-bottom: 0.8em solid transparent;
+    border-left: 0.8em solid transparent;
+    border-right: 0.8em solid #3F68DE;
+    border-top: 0.8em solid transparent;
+    height: 0px;
+    margin-top: 0px;
+    position: absolute;
+    right: 0;
+    width: 1px;
+    transition:border-right 1s ease;
+}
+
+/*#sidebar ul li a.drop:hover:after {
+	border-right: 0.8em solid transparent;
+    transition:none;
+    -o-transition:none;
+    -webkit-transition:none;
+    -moz-transition:none;
+}*/
+
+/*#sidebar ul li a.active {
+    
+}*/
+
+/* ---------------------
+    segundo nível
+--------------------- */
+
+#sidebar ul li ul{
+    position: absolute;
+    display: block;
+    visibility: hidden;
+    height: 100%;
+    background-color: transaprent;
+    width: 0px;
+    color: #fff;
+}
+
+.drop-header {
+    text-align: center;
+    padding: 15px;
+    margin-top: 10px;
+    /*border-bottom: 1px solid var(--sidebar-color);*/
+    /*background: rgba(0, 0, 0, 0.3);*/
+}
+
+#sidebar ul li ul li a {
+    color: white;
+    /*border-bottom: 1px solid white;*/
+}
+
+#sidebar ul li ul li a:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    padding-top: 20px;
+    border-bottom: 1px solid white;
+    transition: all 0.5s;
+}
+
+#sidebar ul li ul li a:hover {
+    color: var(--sidebar-color);
+}
+
+#sidebar ul li:hover ul{
+    left:100%;
+    top: 0px;
+    display: block;
+    visibility: visible;
+    width: 400px;
+    background-color: #3F68DE;
+    transition: background-color 0.5s ease;
+}
+
+
+/* ---------------------
+    dropdown icon
+--------------------- */
+
+#sidebar ul a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+/* ---------------------------------------------------
+    CONTENT
+----------------------------------------------------- */
+
+/* ---------------------
+    navbar
+--------------------- */
+
+#navbar {
+    
+}
+
+#navbar ul li a {
+    
+}
+
+#navbar ul li a:hover {
+    
+}
+
+/* ---------------------
+    caixa
+--------------------- */
+
+.caixa {
+    margin: 40px;
+    padding: 40px;
+}
+
+.transparente {
+    border: 1px solid white;
+    color: white;
+}
+
+.preenchida {
+    background: white;
+}
+
+.sombra {
+    box-shadow: 0px 15px 10px -15px var(--sidebar-color);
+}
+
+.borda {
+    border: 3px solid var(--sidebar-color);
+}
+
+.caixa-title {
+    border-bottom: 1px solid var(--sidebar-color);
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.lead {
+    text-align: justify;
+}
+
+/* ---------------------------------------------------
+    ETC
+----------------------------------------------------- */
