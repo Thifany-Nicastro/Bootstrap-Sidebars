@@ -27,6 +27,22 @@ html, body {
 }
 
 /* ---------------------------------------------------
+    SCROLLBAR
+----------------------------------------------------- */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--sidebar-color);
+}
+
+/* ---------------------------------------------------
     SIDEBAR
 ----------------------------------------------------- */
 
@@ -38,25 +54,34 @@ html, body {
     margin: 0;
 }
 
-#sidebar ul li a {
-    color: rgba(0, 0, 0, 0.3);
-    text-align: center;
-    padding: 20px;
-    /*border-bottom: 1px solid rgba(0, 0, 0, 0.3);*/
+#sidebar ul {
+    width: 100%;
 }
 
-/*#sidebar ul li a:after {
+#sidebar ul li a {
+    color: var(--body-color);
+    text-align: center;
+    padding: 20px;
+    transition: all 0.5s;
+}
+
+#sidebar ul li a:after {
     content: "";
     display: block;
     margin: 0 auto;
     width: 50%;
     padding-top: 20px;
-    border-bottom: 1px solid black;
-}*/
+    border-bottom: 1px solid var(--body-color);
+    transition: all 0.5s;
+}
 
 #sidebar ul li a.active {
     /*background: rgba(0, 0, 0, 0.3);*/
     color: white;
+}
+
+#sidebar ul li a.active:after {
+    border-color: white;
 }
 
 #sidebar ul li a:hover {
@@ -64,24 +89,28 @@ html, body {
     color: white;
 }
 
+#sidebar ul li a:hover:after {
+    border-color: white;
+}
+
 /* ---------------------
     dropdown
 --------------------- */
 
-#sidebar ul a[aria-expanded="true"] {
+/*#sidebar ul a[aria-expanded="true"] {
     background: rgba(0, 0, 0, 0.3);
 }
 
 #sidebar ul ul {
     background: rgba(0, 0, 0, 0.3);
     color: white;
-}
+}*/
 
 /* ---------------------
     dropdown icon
 --------------------- */
 
-#sidebar ul a[data-toggle="collapse"] {
+/*#sidebar ul a[data-toggle="collapse"] {
     position: relative;
 }
 
@@ -89,10 +118,72 @@ html, body {
     display: block;
     position: absolute;
     top: 50%;
-    right: 110px; /*20*/
+    right: 110px; 20
     transform: translateY(-50%);
-}
+}*/
 
 /* ---------------------
     ...
 --------------------- */
+
+
+/* ---------------------------------------------------
+    CONTENT
+----------------------------------------------------- */
+
+/* ---------------------
+    navbar
+--------------------- */
+
+#navbar {
+    background: transparent;
+}
+
+#navbar ul li a {
+    color: white;
+    padding: 20px;
+    margin: 0px 10px;
+    border-bottom: 1px solid white;
+    transition: all 0.5s;
+}
+
+#navbar ul li a:hover {
+    border-color: var(--sidebar-color);
+    color: var(--sidebar-color);
+}
+
+/* ---------------------
+    caixa
+--------------------- */
+
+.caixa {
+    margin: 20px;
+    padding: 40px;
+}
+
+.transparente {
+    border: 1px solid white;
+    color: white;
+}
+
+.preenchida {
+    background: white;
+}
+
+.sombra {
+    box-shadow: 0px 15px 10px -15px var(--sidebar-color);
+}
+
+.borda {
+    border: 3px solid var(--sidebar-color);
+}
+
+.caixa-title {
+    border-bottom: 1px solid white;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.lead {
+    text-align: justify;
+}
