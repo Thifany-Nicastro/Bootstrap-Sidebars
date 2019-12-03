@@ -6,7 +6,11 @@
 
 ## Second (no name yet)
 
+![Segundo](https://github.com/Thifany-Nicastro/Bootstrap-Sidebars/blob/master/Segundo/index.png?raw=true)
+
 ## Third (no name yet)
+
+![Terceiro](https://github.com/Thifany-Nicastro/Bootstrap-Sidebars/blob/master/Terceiro/index.png?raw=true)
 
 ## util
 
