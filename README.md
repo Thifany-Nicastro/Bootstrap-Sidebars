@@ -1,6 +1,6 @@
 # Sidebar
 
-## [First](/Primeiro) (no name yet)
+## [First](/Primeiro)
 
 ![Primeiro](https://github.com/Thifany-Nicastro/Bootstrap-Sidebars/blob/master/Primeiro/index.png?raw=true)
 
