@@ -4,11 +4,11 @@
 
 ![Primeiro](https://github.com/Thifany-Nicastro/Bootstrap-Sidebars/blob/master/Primeiro/index.png?raw=true)
 
-## Second (no name yet)
+## [Second](./Segundo)
 
 ![Segundo](https://github.com/Thifany-Nicastro/Bootstrap-Sidebars/blob/master/Segundo/index.png?raw=true)
 
-## Third (no name yet)
+## [Third](./Terceiro)
 
 ![Terceiro](https://github.com/Thifany-Nicastro/Bootstrap-Sidebars/blob/master/Terceiro/index.png?raw=true)
 
